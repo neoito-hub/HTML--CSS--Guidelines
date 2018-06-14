@@ -34,3 +34,11 @@ By using guidelines we can keep our code more organized and structured, that is 
     - [Theme rules](#Theme-rules)
 
 4. [CSS Preprocessor-SASS](#sass)
+    - [Syntax](#syntax)
+    - [CSS Extensions](#Extensions)
+    - [SassScript](#SassScript)
+    - [@-Rules and Directives](#Directives)
+    - [Control Directives & Expressions](#Control)
+    - [Mixin Directives](#Mixin)
+    - [Function Directives](#Function)
+    - [Extending Sass](#Extending)
