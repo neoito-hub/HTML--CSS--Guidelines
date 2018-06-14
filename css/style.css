@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  height: 100vh;
+}
+.banner {
+  height: 380px;
+  background: url('../images/banner.png') no-repeat;
+  background-size: cover;
+}
+.guideline-container article {
+  width: 314px;
+  line-height: 1.8;
+  padding: 17px 0px 0px 65px;
+}
+.guideline-container section {
+  width: calc(100% - 314px);
+}
+article ul li {
+  list-style: none;
+  font-size: 15.5px;
+  margin-left: 23px;
+}
+article ul {
+  background: #afa9a92e;
+  border: 1px solid #8080801a;
+  padding: 31px 22px 31px 42px;
+}
+article b {
+  font-size: 16px;
+}
