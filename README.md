@@ -23,12 +23,6 @@ By using guidelines we can keep our code more organized and structured, that is 
     - [Declaration order](#declaration-order)
     - [Indentation](#indentation)
     - [CSS Comments](#CSS-comments)
-    
-    
-2.1. [Categorizing CSS rules](#Categorizing-CSS-rules)
-   -  [Base rules](#Base-rules)
-   -  [Layout rules](#Layout-rules)
-   -  [Module rules](#module-rules)
-   -  [State rule](#State-rule)
-   -  [Theme rules](#Theme-rules)
+    - [Categorizing CSS rules](#categorizing-CSS-rules)
 
+3. [CSS Preprocessor-SASS](#sass)
