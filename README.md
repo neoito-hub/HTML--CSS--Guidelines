@@ -2,6 +2,8 @@
 
 By using guidelines we can keep our code more organized and structured, that is easier to build and easier to maintain.
 
+Live - https://neoito-hub.github.io/HTML--CSS--Guidelines/
+
 ## Table of Contents
 1. [HTML](#html)
     - [Syntax](#syntax)
