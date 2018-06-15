@@ -6,8 +6,13 @@ body {
 .banner img {
   width: 100%;
 }
+/* guideline-container start */
 .guideline-container {
   display: flex;
+}
+.guideline-container span {
+  color: #8074de;
+  font-weight: bold;
 }
 .guideline-container article {
   width: 355px;
@@ -31,6 +36,9 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
+/* guideline-container end */
+
+/* article start */
 article ul li {
   list-style: none;
   font-size: 14px;
@@ -57,4 +65,42 @@ pre {
   background: #80808014;
   color: #d20d0d;
   line-height: 1.5;
+  /* overflow-x: scroll; */
 }
+.author {
+  background: #80808014;
+  padding: 14px 7px 17px 18px;
+  font-size: 14px;
+}
+/* article end */
+/* responsive design start */
+@media only screen and (max-width: 768px) {
+  .guideline-container section,
+  .guideline-container article {
+    width: 90%;
+  }
+  pre {
+    overflow-x: scroll;
+  }
+  .guideline-container {
+    flex-direction: column;
+  }
+  .guideline-container section {
+    padding: 0px 20px 21px 20px;
+  }
+  .guideline-container article {
+    padding: 0px 20px 21px 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .guideline-container section {
+    padding: 0px 20px 21px 0px;
+  }
+  .guideline-container article {
+    padding: 0px 20px 21px 20px;
+  }
+  pre {
+    overflow-x: scroll;
+  }
+}
+/* responsive design end */
