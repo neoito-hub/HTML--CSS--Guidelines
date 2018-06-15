@@ -2,73 +2,647 @@
 <html lang="en-us">
 
 <head>
-	<title>Html css guidelines</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+ <title>Html css guidelines</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
-	<!-- main div start -->
-	<main>
-		<section class="banner">
-		</section>
-		<section class="guideline-container">
-			<!-- article start -->
-			<article>
-				<ul>
-					<b>1. Introduction</b>
-					<br>
-					<b> 1.1 Importance of guidelines </b>
-					<br>
-					<b>1.2 HTML</b>
-					<br>
-					<li>
-						1.2.1 Syntax
-					</li>
-					<li> 1.2.2 HTML doctype </li>
-					<li> 1.2.3 Language Attribute</li>
-					<li> 1.2.4 Compatibility mode</li>
-					<li>1.2.3 80 characters wide</li>
-					<li> 1.2.4 Indentation</li>
-					<li>1.2.5 Meaningful Whitespace</li>
-					<li> 1.2.6 HTML Comments </li>
-					<li>1.2.7 Attributes Order</li>
-					<b>1.3 CSS </b>
-					<br>
-					<li> 1.3.1 Syntax</li>
-					<li> 1.3.2 Naming Convention </li>
-					<li> 1.3.3 Reusability </li>
-					<li> 1.3.4 Selector performance</li>
-					<li>1.3.5 Avoid !important </li>
-					<li>1.3.6 Declaration order </li>
-					<li>1.3.7 Indentation </li>
-					<li> 1.3.8 CSS Comments </li>
-					<li> 1.3.9 Media query state</li>
-					<b>1.4 Categorizing CSS rules</b>
-					<br>
-					<li>1.4.1 Base rules
-					</li>
-					<li>1.4.2 Layout rules </li>
-					<li> 1.4.3 Module rules </li>
-					<li> 1.4.4 State rule </li>
-					<li>1.4.5 Theme rules </li>
-					<b>1.5 CSS Preprocessor-SASS</b>
-					<li>1.5.1 Syntax</li>
-					<li>1.5.2 CSS Extensions</li>
-					<li>1.5.3 SassScript</li>
-					<li>1.5.4 @-Rules and Directives</li>
-					<li>1.5.5 Control Directives & Expressions</li>
-					<li>1.5.6 Mixin Directives</li>
-					<li>1.5.7 Function Directives</li>
-					<li>1.5.8 Extending Sass</li>
-				</ul>
-			</article>
-			<!-- article ends -->
-			<section></section>
-		</section>
-	</main>
-	<!-- main div end -->
+ <!-- main div start -->
+ <main>
+  <section class="banner">
+   <img src="images/banner.png">
+  </section>
+  <section class="guideline-container">
+   <!-- article start -->
+   <article>
+    <ul>
+     <a href="#Introduction">
+      <b>1. Introduction</b>
+     </a>
+     <br>
+     <a href="">
+      <b> 1.1 Importance of guidelines </b>
+     </a>
+     <br>
+     <a href="">
+      <b>1.2 HTML</b>
+     </a>
+     <br>
+     <li>
+      <a href="">
+       1.2.1 Syntax</a>
+     </li>
+     <li>
+      <a href="">1.2.2 HTML doctype</a>
+     </li>
+     <li>
+      <a href=""> 1.2.3 Language Attribute</a>
+     </li>
+     <li>
+      <a href=""> 1.2.4 Compatibility mode</a>
+     </li>
+     <li>
+      <a href="">1.2.3 80 characters wide</a>
+     </li>
+     <li>
+      <a href="">1.2.4 Indentation</a>
+     </li>
+     <li>
+      <a href="">1.2.5 Meaningful Whitespace</a>
+     </li>
+     <li>
+      <a href="">1.2.6 HTML Comments </a>
+     </li>
+     <li>
+      <a href="">1.2.7 Attributes Order</a>
+     </li>
+     <li>
+      <a href="">1.2.8 HTML Codes</a>
+     </li>
+     <a href="">
+      <b> 1.3 CSS </b>
+     </a>
+     <br>
+     <li>
+      <a href="">1.3.1 Syntax</a>
+     </li>
+     <li>
+      <a href="">1.3.2 Naming Convention </a>
+     </li>
+     <li>
+      <a href="">1.3.3 Reusability</a>
+     </li>
+     <li>
+      <a href=""> 1.3.4 Selector performance</a>
+     </li>
+     <li>
+      <a href="">1.3.5 Avoid !important</a>
+     </li>
+     <li>
+      <a href="">1.3.6 Declaration order </a>
+     </li>
+     <li>
+      <a href="">1.3.7 Indentation</a>
+     </li>
+     <li>
+      <a href=""> 1.3.8 CSS Comments</a>
+     </li>
+     <li>
+      <a href=""> 1.3.9 Media query state</a>
+     </li>
+     <a href="">
+      <b>1.4 Categorizing CSS rules</b>
+     </a>
+     <br>
+     <li>
+      <a href="">1.4.1 Base rules</a>
+     </li>
+     <li>
+      <a href="">1.4.2 Layout rules</a>
+     </li>
+     <li>
+      <a href=""> 1.4.3 Module rules </a>
+     </li>
+     <li>
+      <a href="">1.4.4 State rule </a>
+     </li>
+     <li>
+      <a href="">1.4.5 Theme rules</a>
+     </li>
+     <a href="">
+      <b>1.5 CSS Preprocessor-SASS</b>
+     </a>
+     <li>
+      <a href="">1.5.1 Syntax</a>
+     </li>
+     <li>
+      <a href="">1.5.2 CSS Extensions</a>
+     </li>
+     <li>
+      <a href="">1.5.3 SassScript</a>
+     </li>
+     <li>
+      <a href="">1.5.4 @-Rules and Directives</a>
+     </li>
+     <li>
+      <a href="">1.5.5 Control Directives & Expressions</a>
+     </li>
+     <li>
+      <a href="">1.5.6 Mixin Directives</a>
+     </li>
+     <li>
+      <a href="">1.5.7 Function Directives</a>
+     </li>
+     <li>
+      <a href="">1.5.8 Extending Sass
+      </a>
+     </li>
+    </ul>
+   </article>
+   <!-- article ends -->
+   <section>
+    <h1>About the Author</h1>
+    <p class="author">
+     HTML and CSS Guidelines is a document by me
+     <span>Daliya john</span>. I am a software engineer at
+     <span>Neoito Technologies Pvt Ltd</span> in Trivandrum.This document will help you to develop flexible, durable, and sustainable
+     HTML and CSS.
+    </p>
+    <div id="#Introduction">
+     <h1>1. Introduction </h1>
+     <p>In working on large or small projects with dozens of developers, it is important that all the developers are working
+      in a unified way. So that we should have maintain our code easily and keep it more readable.</p>
+    </div>
+    <div id="#HTML">
+     <h1> 1.2 HTML </h1>
+     <p> HTML is a Markup Language for creating web pages and web applications. HTML elements are the building block of html
+      pages.
+     </p>
+    </div>
+    <div id="#htmlSyntax">
+     <h3> 1.2.1 Syntax</h3>
+     <p> Always use double quotes on attributes. Also never forgot to close any opened tags.</p>
+     <pre>
+<xmp>
+<!DOCTYPE html>	
+<html>
+ <head>  
+  <title>Page title</title>
+ </head>
+ <body>
+  <img src="images/company-logo.png" alt="Company">
+  <h1 class="hello-world">Hello, world!</h1>
+ </body>
+</html>
+</xmp>
+</pre>
+    </div>
+    <div id="#doctype">
+     <h3>1.2.2 HTML doctype
+     </h3>
+     <p> Consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.It is an
+      instruction to the web browser about what version of HTML the page is written in.</p>
+     <pre>
+<xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+</html>
+</xmp>
+	</pre>
+    </div>
+    <div id="#Language">
+     <h3> 1.2.3 Language Attribute </h3>
+     <p> The HTML element in the following example declares that the document’s language is English.
+     </p>
+     <pre>
+<xmp>
+<html lang="en-us">
+	<!-- ... -->
+</html>		
+</xmp>
+</pre>
+    </div>
+    <div id="#Compatibility">
+     <h3>1.2.4 Compatibility mode</h3>
+     <p> IE compatibility mode: Internet Explorer supports the use of a document compatibility
+      <meta> tag to specify what version of IE the page should be rendered as. Otherwise, it's most useful to instruct IE to use
+      the latest supported mode with edge mode.
+     </p>
+     <pre>
+<xmp>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+</xmp>
+</pre>
+     <p> To ensure proper rendering and touch zooming, add the viewport meta tag to your
+
+      <head>.</p>
+     <pre>
+<xmp>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</xmp>
+</pre>
+    </div>
+    <div id="#characters">
+     <h3> 1.2.3 80 characters wide </h3>
+     <p> 80 character wide columns are used for html code.
+     </p>
+     <pre>
+<xmp>
+/**
+* I am a long-form comment. I describe, in detail, the CSS that follows.
+* I am such a long comment that I easily break the 80 character limit,
+* so I am broken across several lines.
+*/	
+</xmp>
+	</pre>
+    </div>
+    <div id="#Indentation">
+     <h3>1.2.4 Indentation </h3>
+     <p>Indentation is a coding techniques to make our html clear. Without using indentation it’s hard to figure out where the
+      code starts and ends.
+      <br> Use 2 tab space for indentation (4 space).
+     </p>
+     <pre>
+<xmp>
+<p> 
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ incididunt ut labore et dolore magna aliqua. 
+</p>
+</xmp>
+</pre>
+    </div>
+    <div id="#Whitespace">
+     <h3> 1.2.5 Meaningful Whitespace
+     </h3>
+     <p> As well as indentation, meaningful whitespace will help us to understand our code easily.
+      <br> single empty line between new section.
+     </p>
+     <pre>
+<xmp>
+<div class="session1">
+ <div></div>
+</div>
+
+<div class="session2">
+ <div></div>
+</div>
+</xmp>
+</pre>
+    </div>
+    <div id="#Comments">
+     <h3> 1.2.6 HTML Comments </h3>
+     <p> Code is written and maintained by many developers. So that we should have to ensure your code is descriptive, well commented.
+      Well comments will convey the purpose and all the developers can understand the code.
+     </p>
+     <pre>
+<xmp>
+<!-- service start -->
+<div class="service">
+ <h3>heading 1</h3>
+</div>
+<!-- service end -->
+
+<!-- products start -->
+<div class="products">
+ <h3>heading 2</h3>
+</div>
+<!-- products end -->
+</xmp>
+</pre>
+    </div>
+    <div id="#Attributes">
+     <h3>1.2.7 Attributes Order</h3>
+     <p> HTML attributes should come in this particular order for easier reading of code. Class, id, name, data-*, src, for,
+      type, href, value, title, alt, role, aria-* Classes make for great reusable components, so they come first. Ids are
+      more specific and should be used sparingly so they come second.
+     </p>
+     <pre>
+<xmp>
+<a class="..." id="..." data-toggle="modal" href="#">
+ Example link
+</a>
+<input class="form-control" type="text">
+<img  class=”..” src="..." alt="...">	
+</xmp>
+</pre>
+    </div>
+    <div id="#Codes">
+     <h3> 1.2.8 HTML Codes </h3>
+     <pre><br>
+<img src="images/htmlcode.png">
+<br>
+</pre>
+    </div>
+    <div id="#CSS">
+     <h1> 1.3 CSS </h1>
+     <p> CSS is a style sheet language used for describing the presentation of a document written in markup language.
+     </p>
+    </div>
+    <div id="#CSSSyntax">
+     <h3> 1.3.1 Syntax
+     </h3>
+     <p>
+      - Use two tab space for indentation (four space).
+      <br>- Include one space before the opening brace of declaration blocks.
+      <br>- Place closing braces of declaration blocks on a new line.
+      <br>- Include one space after : for each declaration.
+      <br>- End all declarations with a semicolon.
+      <br>- Comma-separated property values should include a space after each comma (e.g., box-shadow).
+      <br>- Don't include spaces after commas within rgb(), rgba(), hsl(), hsla(), or rect() values.
+      <br>- Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5 and -.5px instead of
+      -0.5px).
+      <br>- Lowercase all hex values, e.g., #fff.
+      <br>- Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;.
+      <br>
+     </p>
+    </div>
+
+    <div id="#NamingConvention">
+     <h3>1.3.2 Naming Convention
+     </h3>
+     <p> On large projects, there is chance to broke our styles in multiple files. In these cases, naming convention also makes
+      it easier to find which file a style belongs to.
+     </p>
+     <p>
+      <strong>1.3.2.1 </strong> For styling grid use
+      <strong>grid</strong> as prefix</p>
+     <pre>
+<xmp>
+HTML: <div class="grid-serviceList1">
+      </div>   
+CSS:  .grid-serviceList1 { }	
+</xmp>
+</pre>
+     <p>
+      <strong> 1.3.2.2 </strong> For styling layout use
+      <strong>layout</strong> as prefix</p>
+    </div>
+    <pre>
+<xmp>
+HTML: <div class="layout-primary">
+       <p>Content</p>
+      </div>
+CSS:  .layout-primary { }
+</xmp>
+</pre>
+    <p>
+     <strong> 1.3.2.3 </strong> Naming convention for
+     <strong>theming</strong> use theme as prefix</p>
+    </div>
+    <pre>
+<xmp>
+CSS: .theme-header {}
+</xmp>
+</pre>
+
+    <p>
+     <strong> 1.3.2.4 </strong> Naming convention for
+     <strong>state</strong> use is as prefix</p>
+    </div>
+    <pre>
+<xmp>
+CSS: .is-active {},
+     .button-is-active {}
+</xmp>
+</pre>
+
+    <p>
+     <strong> 1.3.2.5 </strong>Use
+     <strong>“ - “</strong> for seperating class name</p>
+    </div>
+    <pre>
+<xmp>
+CSS:.service-list { }
+</xmp>
+</pre>
+    <p>
+     <strong> 1.3.2.6 </strong>Use
+     <strong>camelcase</strong> for subclass</p>
+    </div>
+    <pre>
+<xmp>
+CSS:  .service-listDetails { }
+</xmp>
+</pre>
+    <p>
+     <strong> 1.3.2.7 </strong>Subclass name should be start with the prefix module name
+    </p>
+    </div>
+    <pre>
+<xmp>
+CSS:  .service-list { }
+</xmp>
+</pre>
+    <div id="#Reusability">
+     <h3> 1.3.3 Reusability </h3>
+     <p> We want the option to be able to move, recycle, duplicate, and our components across our projects.so that we can use
+      class instead of ID. ID can be used to identify one element, whereas a class can be used to identify more than one.
+     </p>
+    </div>
+    <div id="#performance">
+     <h3> 1.3.4 Selector performance
+     </h3>
+     <p> Selector performance is very important because we must know about how quickly a browser can match the selectors . The
+      browsers read CSS selectors right-to-left.
+     </p>
+     <pre>
+<xmp>
+Bad practice:
+body .home .header ul { }	
+
+Good practice:
+.header ul {}
+</xmp>
+</pre>
+    </div>
+    <div id="#important">
+     <h3> 1.3.5 Avoid !important</h3>
+     <p> Avoid the use of important. We use !important for overwrite something. We can avoid the use of !important by using modular
+      structured css.
+     </p>
+    </div>
+    <div id="#Declaration">
+     <h3> 1.3.6 Declaration order</h3>
+     <p> If we write a class for a div, there is a declaration order for that style.
+      <br>1. Positioning
+      <br>2. Box model
+      <br>3. Typographic
+      <br>4. Visual
+     </p>
+     <pre>
+<xmp>
+.declaration-order {
+ /* Positioning */
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ z-index: 100;
+
+ /* Box-model */
+ display: block;
+ float: right;
+ width: 100px;
+ height: 100px;
+
+ /* Typography */
+ font: normal 13px "Helvetica Neue", sans-serif;
+ line-height: 1.5;
+ color: #333;
+ text-align: center;
+ /* Visual */
+ background-color: #f5f5f5;
+ border: 1px solid #e5e5e5;
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#cssIndentation">
+     <h3> 1.3.7 Indentation </h3>
+     <p>
+      Indentation is a coding techniques to make our css clear. With out using indentation it’s hard to figure out where the code
+      starts and ends. Use two tab space for indentation (4 space).
+     </p>
+     <pre>
+<xmp>
+.product {
+  color:red; 
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#CSSComments">
+     <h3> 1.3.8 CSS Comments </h3>
+     <p>
+      Code is written and maintained by many developers. So that we should have to ensure your code is descriptive, well commented.
+      Well comments will convey the purpose and all the developers can understand the code.
+     </p>
+     <pre>
+<xmp>
+//service start
+.service {
+  color:white;
+}
+//service end
+
+//products start
+.product {
+  color:red;
+}
+//products end
+</xmp>
+</pre>
+    </div>
+    <div id="#Media">
+     <h3> 1.3.9 Media query state
+     </h3>
+     <p>
+      Media query state are used to set our website in different resolution.
+     </p>
+     <pre>
+ <xmp>
+ Small phone - @media only screen and (min-width : 480px) {}
+ Ipad - @media only screen and (min-width : 768px) and (max-width : 1024px) {}
+ Desktop - @media only screen and (min-width : 1024px) and (max-width : 1440px) {}
+ 2K - @media only screen and (min-width : 1440px) and (max-width : 2160px) {}
+ 4K - @media only screen and (min-width : 2160px) and (max-width : 3840px) {}   
+ </xmp>
+ </pre>
+    </div>
+    <div id="#Categorizing">
+     <h3>1.4 Categorizing CSS rules </h3>
+     <p>
+      1. Base rules
+      <br> 2. Layout rules
+      <br> 3. Module rules
+      <br> 4. State rules
+      <br> 5. Theme rules
+      <br>
+     </p>
+    </div>
+    <div id="#Baserules">
+     <h3>1.4.1 Base rules
+     </h3>
+     <p>
+      Initially we can set our default style. Almost we use single element selector. it includes attribute selector, pseudo-class
+      selector and child selector.
+      <br> - single element selector - body ,html { }
+      <br> - attribute selector – input[type=text]{}
+      <br> - child selector - a {}
+      <br> - pseudo-class selector - a:hover {}
+      <br> - Initially we can define our background color, font family, font size for our entire project at the top of our style
+      sheet.
+     </p>
+     <pre>
+<xmp>
+body {
+ background-color: gray;
+ font-family:roboto;
+ font size: 14px;
+ line-height:1.7;
+ color: black;
+ height:100%;
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#Layoutrules">
+     <h3> 1.4.2 Layout rules</h3>
+     <p>
+      Layout is used to lay elements out on the page. Layout divide the page in to sections .Also it may contain several module
+      together. There is a distinction between layouts dictating the major and minor components of a page. The minor components—such
+      as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer.
+     </p>
+     <pre>
+<xmp>
+#header, #article, #footer {
+ width: 960px; margin: auto;
+}
+#article {
+ border: solid #CCC; border-width: 1px 0 0;
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#Module">
+     <h3>1.4.2 Module rules</h3>
+     <p>
+      Module is a more discrete component of the page.Module placed inside the layout component.Module should be designed to exist
+      as a standalone component.Modules can easily be moved to different parts of the layout without breaking.
+     </p>
+     <pre>
+<xmp>
+<div class="layout-primary"> // layout
+ <div class="service service-list"> // module
+  <div class="grid-serviceList"> 
+   <p>content 1</p>
+   <span>content 2 </span>
+  </div>
+ </div>
+</div>
+</xmp>
+</pre>
+    </div>
+    <div id="#Staterule">
+     <h3>1.4.3 State rule </h3>
+     <p>
+      State rule describe how our module or layout looks when in a particular state.
+     </p>
+     <pre>
+<xmp>
+ Is it hidden or expanded - isHidden / isExpand 
+ Is it active or inactive - isActive / isInactive 
+</xmp>
+</pre>
+    </div>
+    <div id="#Theme">
+     <h3>1.4.4 Theme rules </h3>
+     <p> It is probably self-evident but a theme defines colours and images that give your application or site its look and feel.
+      Separating the theme out into its own set of styles allows for those styles to be easily redefined for alternate themes.
+     </p>
+     <pre>
+<xmp>
+h1 {
+ color:red;
+}
+.nav {
+ font-size:12px;
+ background:blue;
+}
+</xmp>
+</pre>
+    </div>
+   </section>
+  </section>
+ </main>
+ <!-- main div end -->
 </body>
 
 </html>
