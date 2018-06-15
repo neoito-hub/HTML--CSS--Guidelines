@@ -145,8 +145,15 @@
    </article>
    <!-- article ends -->
    <section>
+    <h1>About the Author</h1>
+    <p class="author">
+     HTML and CSS Guidelines is a document by me
+     <span>Daliya john</span>. I am a software engineer at
+     <span>Neoito Technologies Pvt Ltd</span> in Trivandrum.This document will help you to develop flexible, durable, and sustainable
+     HTML and CSS.
+    </p>
     <div id="#Introduction">
-     <h1>1. INTRODUCTION </h1>
+     <h1>1. Introduction </h1>
      <p>In working on large or small projects with dozens of developers, it is important that all the developers are working
       in a unified way. So that we should have maintain our code easily and keep it more readable.</p>
     </div>
@@ -228,9 +235,9 @@
      <pre>
 <xmp>
 /**
-* I am a long-form comment. I describe, in detail, the CSS that follows. I am
-* such a long comment that I easily break the 80 character limit, so I am
-* broken across several lines.
+* I am a long-form comment. I describe, in detail, the CSS that follows.
+* I am such a long comment that I easily break the 80 character limit,
+* so I am broken across several lines.
 */	
 </xmp>
 	</pre>
@@ -313,7 +320,7 @@
 </pre>
     </div>
     <div id="#CSS">
-     <h1> 1.2 CSS </h1>
+     <h1> 1.3 CSS </h1>
      <p> CSS is a style sheet language used for describing the presentation of a document written in markup language.
      </p>
     </div>
@@ -321,17 +328,17 @@
      <h3> 1.3.1 Syntax
      </h3>
      <p>
-      Use two tab space for indentation (four space).
-      <br>Include one space before the opening brace of declaration blocks.
-      <br>Place closing braces of declaration blocks on a new line.
-      <br>Include one space after : for each declaration.
-      <br>End all declarations with a semicolon.
-      <br> Comma-separated property values should include a space after each comma (e.g., box-shadow).
-      <br>Don't include spaces after commas within rgb(), rgba(), hsl(), hsla(), or rect() values.
-      <br>Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5 and -.5px instead of
+      - Use two tab space for indentation (four space).
+      <br>- Include one space before the opening brace of declaration blocks.
+      <br>- Place closing braces of declaration blocks on a new line.
+      <br>- Include one space after : for each declaration.
+      <br>- End all declarations with a semicolon.
+      <br>- Comma-separated property values should include a space after each comma (e.g., box-shadow).
+      <br>- Don't include spaces after commas within rgb(), rgba(), hsl(), hsla(), or rect() values.
+      <br>- Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5 and -.5px instead of
       -0.5px).
-      <br>Lowercase all hex values, e.g., #fff.
-      <br>Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;.
+      <br>- Lowercase all hex values, e.g., #fff.
+      <br>- Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;.
       <br>
      </p>
     </div>
@@ -513,25 +520,125 @@ Good practice:
 </xmp>
 </pre>
     </div>
-
-
-
-    <div id="#Language">
-     <h3> 1.2.3 Language Attribute </h3>
-     <p> The HTML element in the following example declares that the document’s language is English.
+    <div id="#Media">
+     <h3> 1.3.9 Media query state
+     </h3>
+     <p>
+      Media query state are used to set our website in different resolution.
      </p>
      <pre>
-      <xmp>
-      <html lang="en-us">
-       <!-- ... -->
-      </html>		
-      </xmp>
-      </pre>
+ <xmp>
+ Small phone - @media only screen and (min-width : 480px) {}
+ Ipad - @media only screen and (min-width : 768px) and (max-width : 1024px) {}
+ Desktop - @media only screen and (min-width : 1024px) and (max-width : 1440px) {}
+ 2K - @media only screen and (min-width : 1440px) and (max-width : 2160px) {}
+ 4K - @media only screen and (min-width : 2160px) and (max-width : 3840px) {}   
+ </xmp>
+ </pre>
     </div>
-
-
-
-
+    <div id="#Categorizing">
+     <h3>1.4 Categorizing CSS rules </h3>
+     <p>
+      1. Base rules
+      <br> 2. Layout rules
+      <br> 3. Module rules
+      <br> 4. State rules
+      <br> 5. Theme rules
+      <br>
+     </p>
+    </div>
+    <div id="#Baserules">
+     <h3>1.4.1 Base rules
+     </h3>
+     <p>
+      Initially we can set our default style. Almost we use single element selector. it includes attribute selector, pseudo-class
+      selector and child selector.
+      <br> - single element selector - body ,html { }
+      <br> - attribute selector – input[type=text]{}
+      <br> - child selector - a {}
+      <br> - pseudo-class selector - a:hover {}
+      <br> - Initially we can define our background color, font family, font size for our entire project at the top of our style
+      sheet.
+     </p>
+     <pre>
+<xmp>
+body {
+ background-color: gray;
+ font-family:roboto;
+ font size: 14px;
+ line-height:1.7;
+ color: black;
+ height:100%;
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#Layoutrules">
+     <h3> 1.4.2 Layout rules</h3>
+     <p>
+      Layout is used to lay elements out on the page. Layout divide the page in to sections .Also it may contain several module
+      together. There is a distinction between layouts dictating the major and minor components of a page. The minor components—such
+      as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer.
+     </p>
+     <pre>
+<xmp>
+#header, #article, #footer {
+ width: 960px; margin: auto;
+}
+#article {
+ border: solid #CCC; border-width: 1px 0 0;
+}
+</xmp>
+</pre>
+    </div>
+    <div id="#Module">
+     <h3>1.4.2 Module rules</h3>
+     <p>
+      Module is a more discrete component of the page.Module placed inside the layout component.Module should be designed to exist
+      as a standalone component.Modules can easily be moved to different parts of the layout without breaking.
+     </p>
+     <pre>
+<xmp>
+<div class="layout-primary"> // layout
+ <div class="service service-list"> // module
+  <div class="grid-serviceList"> 
+   <p>content 1</p>
+   <span>content 2 </span>
+  </div>
+ </div>
+</div>
+</xmp>
+</pre>
+    </div>
+    <div id="#Staterule">
+     <h3>1.4.3 State rule </h3>
+     <p>
+      State rule describe how our module or layout looks when in a particular state.
+     </p>
+     <pre>
+<xmp>
+ Is it hidden or expanded - isHidden / isExpand 
+ Is it active or inactive - isActive / isInactive 
+</xmp>
+</pre>
+    </div>
+    <div id="#Theme">
+     <h3>1.4.4 Theme rules </h3>
+     <p> It is probably self-evident but a theme defines colours and images that give your application or site its look and feel.
+      Separating the theme out into its own set of styles allows for those styles to be easily redefined for alternate themes.
+     </p>
+     <pre>
+<xmp>
+h1 {
+ color:red;
+}
+.nav {
+ font-size:12px;
+ background:blue;
+}
+</xmp>
+</pre>
+    </div>
    </section>
   </section>
  </main>
