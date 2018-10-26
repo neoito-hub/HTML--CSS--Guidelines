@@ -123,26 +123,22 @@
 						<a href="#sass-extensions">1.5.2 CSS Extensions</a>
 					</li>
 					<li>
-						<a href="#">1.5.3 Variables</a>
+						<a href="#sass-variables">1.5.3 Variables</a>
 					</li>
 					<li>
-						<a href="#">1.5.4 Nesting</a>
+						<a href="#sass-nesting">1.5.4 Nesting</a>
 					</li>
 					<li>
-						<a href="#">1.5.5 Partials</a>
+						<a href="#sass-partials">1.5.5 Partials</a>
 					</li>
 					<li>
-						<a href="#">1.5.6 Import</a>
+						<a href="#sass-import">1.5.6 Import</a>
 					</li>
 					<li>
-						<a href="#">1.5.7 Mixins</a>
+						<a href="#sass-mixins">1.5.7 Mixins</a>
 					</li>
 					<li>
-						<a href="#">1.5.8 Operators
-						</a>
-					</li>
-					<li>
-						<a href="#">Function Directives
+						<a href="#sass-function">1.5.8 Function Directives
 						</a>
 					</li>
 				</ul>
@@ -774,7 +770,138 @@ nav
 	</pre>
 </div>
 
+<div id="sass-variables">
+<h3>1.5.3 Variables</h3>
+<p>
+Variables is a way to store information that you want to reuse throughout your stylesheet. 
+You can store things like colors, font, or any CSS value you think you'll want to reuse.
+Sass uses the $ symbol to define variable. 
+<pre>
+	<xml>
+$primary-color: #333;
+body { color: $primary-color; }
+	</xml>
+</pre>
+</p>
+</div>
 
+<div id="sass-nesting">
+	<h3>1.5.4 Nesting</h3>
+	<p>
+		Sass is the ability to nest declarations.If we want to reference the parent then we can use ‘&’ symbol at the beginning .
+<pre>
+	<xml>
+.container {
+ width: 100%;
+ h1 {
+  color: red;
+ }
+}
+
+a {
+ color: blue;
+ &:hover {
+  text-decoration: none;
+ }
+}
+	</xml>
+</pre>
+	</p>
+</div>
+
+<div id="sass-partials">
+	<h3>1.5.5 Partials</h3>
+	<p>You have a SCSS file that you want to import but don't want to compile to a CSS file, you can add an underscore to the beginning of the filename. 
+		<pre>
+			<xml>
+File name :  _colors.scss
+Declaration: @import "colors";
+			</xml>
+		</pre>
+</p>
+</div>
+
+<div id="sass-import">
+	<h3>1.5.6 Import</h3>
+	<p>
+		It is used to import scss files.All imported SCSS files will be merged together into a single CSS output file.
+		<pre>
+			<xml>
+@import "foo.scss";
+			</xml>
+		</pre>
+	</p>
+</div>
+
+<div id="sass-mixins"> 
+	<h3>1.5.7 Mixins</h3>
+	<p>Mixins are allows you to include styles.Mixins are defined with the @mixin directive,
+followed by the name of the mixin and optionally the arguments and a block containing the contents of the mixin.Mixins are included in the document with the @include directive.
+</p>
+<pre>
+	<xml>
+@mixin large-text {
+ font: {
+  family: Arial;
+  size: 20px;
+  weight: bold;
+ }
+ color: #ff0000;
+}
+
+
+.page-title {
+ @include large-text;
+ padding: 4px;
+ margin-top: 10px;
+}
+	</xml>
+</pre>
+</div>
+
+<div id="sass-function">
+	<h3>1.5.8 Function Directives</h3>
+	<p>SassScript supports basic control directives and expressions for including styles only under some conditions.
+		<h4>@if</h4>
+	<pre>
+		<xml>
+$type: monster;
+p {
+ @if $type == ocean {
+  color: blue;
+ } @else if $type == matador {
+  color: red;
+ } @else if $type == monster {
+   color: green;
+ } @else {
+   color: black;
+ }
+}
+		</xml>
+	</pre>
+
+	<h4>@for</h4>
+	<pre>
+		<xml>
+@for $i from 1 through 2 {
+ .item-#{$i} { width: 2em * $i; }
+}
+		</xml>
+	</pre>
+
+	<h4>@while</h4>
+	<p>The @while directive takes a SassScript expression and repeatedly outputs the nested styles until the statement evaluates to false. </p>
+	<pre>
+		<xml>
+$i: 6;
+@while $i > 0 {
+ .item-#{$i} { width: 2em * $i; }
+ $i: $i - 2;
+}
+		</xml>
+	</pre>
+</p>
+</div>
 			</section>
 		</section>
 	</main>
