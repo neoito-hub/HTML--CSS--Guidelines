@@ -61,6 +61,8 @@ article ul {
   background: rgba(175, 169, 169, 0.06);
   border: 1px solid #8080801a;
   padding: 31px 22px 31px 42px;
+  position: sticky;
+  top: 2rem;
 }
 article b {
   font-size: 17px;
